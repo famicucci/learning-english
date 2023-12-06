@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    /* color: #FFD700; */
+    /* add gray color */
+    color: #ccc;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+}
+
+/* Add hover to the stars. But they are five stars and i need to paint the previous stars too */
+/* but i need to select the previous siblings */
+.star:hover,
+.star:hover~.star {
+    color: #FFD700;
+}
+
+.icon {
+    margin-left: 10px;
+}
+
+.starsContainer {
+    display: flex;
+    flex-direction: row-reverse;
+}
